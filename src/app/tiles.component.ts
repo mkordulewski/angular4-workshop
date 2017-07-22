@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import { Product } from './types/product';
 import { Tile } from "./tile.component";
 
 @Component({

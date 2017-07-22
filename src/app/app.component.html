@@ -1,13 +1,3 @@
 <div class="wrapper">
-  <div class="products">
-    <p><strong>Promoted products:</strong></p>
-    <div *ngFor="let item of items">
-      {{item.promoted ? item.name : ''}}
-    </div>
-    <p><strong>All products:</strong></p>
-    <div *ngFor="let item of items">
-      {{item.name}}
-    </div>
-  </div>
   <tiles [tiles]="items"></tiles>
 </div>

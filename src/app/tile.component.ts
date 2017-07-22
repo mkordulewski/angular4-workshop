@@ -5,24 +5,27 @@ import { Product } from './types/product';
   selector: 'my-tile',
   template: `
     <div class="tile">
-      <p><em>{{ tile.name }}</em></p>
-      <p>Cena:  {{ tile.price }}</p>
-      <img [src]="tile.image">
-      <p>{{ tile.description }}</p>
+      <div class="col image"><img [src]="tile.image"></div>
+      <div class="col content">
+        <h3>{{ tile.name }} ({{ tile.price }} zł)</h3>
+        <p>{{ tile.description }}</p>
+      </div>
     </div>
   `,
-  styles: [`:host {
-    display: block;
+  styles: [`.tile {
     padding: 10px;
     background: #eee;
-    margin: 5px;
-    float: left;
-    width: 180px;
+    margin: 20px;
+    display: flex;
   }
-  p {
-    margin-top: 2px;
-    margin-bottom: 2px;
+  
+  img {
+    width: 100px;
   }
+    .image {
+      width: 120px;
+    }
+    
   `]
 })
 export class Tile {
