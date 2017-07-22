@@ -1,0 +1,10 @@
+.wrapper {
+  margin: auto;
+  width: 800px;
+}
+
+.tile {
+  padding: 10px;
+  background: #eee;
+  margin: 30px;
+}
