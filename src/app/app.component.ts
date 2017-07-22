@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public items = [
-    'Product 1',
-    'Product 2',
-    'Product 3'
+    {name: 'Product 1', promoted: true},
+    {name: 'Product 2', promoted: false},
+    {name: 'Product 3', promoted: true},
+    {name: 'Product 4', promoted: false}
   ]
 }

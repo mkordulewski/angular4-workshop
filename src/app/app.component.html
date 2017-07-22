@@ -1,5 +1,12 @@
 <div class="wrapper">
-  <div class="tile">Product: {{ items[0] }}</div>
-  <p><strong>Products:</strong></p>
-  <div *ngFor="let item of items"> {{item}}</div>
+  <div class="tile">Product: {{ items[0].name }}</div>
+
+  <p><strong>Promoted products:</strong></p>
+  <div *ngFor="let item of items">
+    {{item.promoted ? item.name : ''}}
+  </div>
+  <p><strong>All products:</strong></p>
+  <div *ngFor="let item of items">
+    {{item.name}}
+  </div>
 </div>
