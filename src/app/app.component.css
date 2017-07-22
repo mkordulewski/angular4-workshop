@@ -3,8 +3,18 @@
   width: 800px;
 }
 
+.products {
+  float: left;
+  width: 150px;
+}
+
+.view {
+  float: left;
+  width: 650px;
+}
+
 .tile {
   padding: 10px;
   background: #eee;
-  margin: 30px;
+  margin: 20px;
 }
