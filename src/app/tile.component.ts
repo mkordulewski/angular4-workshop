@@ -13,7 +13,9 @@ import { Product } from './types/product';
     display: block;
     padding: 10px;
     background: #eee;
-    margin: 20px;
+    margin: 5px;
+    float: left;
+    width: 180px;
   }`]
 })
 export class Tile {
