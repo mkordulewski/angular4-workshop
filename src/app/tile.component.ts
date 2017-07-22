@@ -9,6 +9,7 @@ import { Product } from './types/product';
       <div class="col content">
         <h3>{{ tile.name }} ({{ tile.price }} zł)</h3>
         <p>{{ tile.description }}</p>
+        <span *ngFor="let tag of tile.tags">{{tag}}, </span>
       </div>
     </div>
   `,
