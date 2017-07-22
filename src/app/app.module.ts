@@ -2,10 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import {Tile} from "./tile.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, Tile
   ],
   imports: [
     BrowserModule

@@ -9,12 +9,7 @@
       {{item.name}}
     </div>
   </div>
-  <div *ngFor="let item of items">
     <div class="view">
-      <div class="tile">Product: <em>{{ item.name }}</em>
-        <img [src]="item.image">
-        <p>{{ item.description }}</p>
-      </div>
+      <my-tile [tile]="items[0]"></my-tile>
     </div>
-  </div>
 </div>
