@@ -1,6 +1,6 @@
 .wrapper {
   margin: auto;
-  width: 800px;
+  width: 1000px;
 }
 
 .products {
@@ -10,7 +10,7 @@
 
 .view {
   float: left;
-  width: 650px;
+  width: 200px;
 }
 
 .tile {
