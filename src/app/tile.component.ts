@@ -4,7 +4,9 @@ import { Product } from './types/product';
 @Component({
   selector: 'my-tile',
   template: `
-    <div class="tile">Product: <em>{{ tile.name }} - {{ tile.price }}</em>
+    <div class="tile">
+      <p><em>{{ tile.name }}</em></p>
+      <p>Cena:  {{ tile.price }}</p>
       <img [src]="tile.image">
       <p>{{ tile.description }}</p>
     </div>
@@ -16,7 +18,12 @@ import { Product } from './types/product';
     margin: 5px;
     float: left;
     width: 180px;
-  }`]
+  }
+  p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  `]
 })
 export class Tile {
   @Input() public tile: Product;
